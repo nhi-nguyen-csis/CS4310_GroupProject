@@ -39,6 +39,11 @@ public class RR extends Thread{
             if (currentProcess.burstTime > 0) {
                 queue.add(currentProcess);
             }
+            try{
+                Thread.sleep(100);
+            } catch(Exception e){
+                e.printStackTrace();
+            }
         }
         System.out.printf("%s (RR) is done\n", name);
     }

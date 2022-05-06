@@ -19,6 +19,11 @@ public class FCFS extends Thread {
         // loop through each item in the arrivalTime array to find the min
         for (int i = 0; i < processes.size(); i ++){
             System.out.printf("%s (FCFS) is working on process %d\n", s, processes.get(i));
+            try{
+                Thread.sleep(100);
+            } catch(Exception e){
+                e.printStackTrace();
+            }
         }
         System.out.printf("%s (FCFS) is done\n", s);
     }

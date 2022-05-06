@@ -41,11 +41,11 @@ public class Main {
 
         // loop through all processes and alternately assign them to each computer
         for (int i = 0; i < pid.size(); i++) {
-            if (i % 3 == 1) { // assign to computer 1
+            if (i % 3 == 0) { // assign to computer 1
                 pid1.add(pid.get(i));
                 burst1.add(burst.get(i));
             }
-            else if (i % 3 == 2) { // assign to computer 2
+            else if (i % 3 == 1) { // assign to computer 2
                 pid2.add(pid.get(i));
                 burst2.add(burst.get(i));
             } else { // assign to computer 3
